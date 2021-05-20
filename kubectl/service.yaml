@@ -6,16 +6,15 @@ metadata:
   name: mydeploy
   namespace: apigw
 spec:
-  # clusterIP: <some IP address>
-  externalTrafficPolicy: Cluster
+  # externalTrafficPolicy: Cluster
   ports:
-  - nodePort: 31455
-    port: 80
+  # - nodePort: 31455
+  - port: 80
     protocol: TCP
     targetPort: 3000
   selector:
     app: node
   sessionAffinity: None
-  type: LoadBalancer
+  type: ClusterIP
 status:
   loadBalancer: {}
