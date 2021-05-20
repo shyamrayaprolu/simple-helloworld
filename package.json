@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-helloworld",
+  "version": "1.0.0",
+  "description": "simple hello world app",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shyamrayaprolu/simple-helloworld.git"
+  },
+  "keywords": [
+    "helloworld"
+  ],
+  "author": "shyam rayaprolu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shyamrayaprolu/simple-helloworld/issues"
+  },
+  "homepage": "https://github.com/shyamrayaprolu/simple-helloworld#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

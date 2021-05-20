@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: node
+  name: mydeploy
+  namespace: apigw
+spec:
+  # clusterIP: <some IP address>
+  externalTrafficPolicy: Cluster
+  ports:
+  - nodePort: 31455
+    port: 80
+    protocol: TCP
+    targetPort: 3000
+  selector:
+    app: node
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer: {}
